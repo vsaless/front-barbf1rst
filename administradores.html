@@ -99,7 +99,7 @@
                 //console.log(k, data[k]);
                 var item = data[k];
 
-                stringAux += "<tr><td>"+item.nome+"</td><td>"+item.cpf+"</td><td>"+item.email+"</td><td>"+item.telefone+"</td><td><input id="+item.id+" onclick=\"deletarDadosTabela(this)\" type = \"button\" value = \"🗑\"></input></td><td><input id="+item.id+" onclick=\"atualizarNaTabela(this)\" type = \"button\" value = \"🗑\"></input></td></tr>";
+                stringAux += "<tr><td>"+item.nome+"</td><td>"+item.cpf+"</td><td>"+item.email+"</td><td>"+item.telefone+"</td><td><input id="+item.id+" onclick=\"deletarDadosTabela(this)\" type = \"button\" value = \"🗑\"></input></td><td><input id="+item.id+" onclick=\"atualizarNaTabela(this)\" type = \"button\" value = \"editar\"></input></td></tr>";
                 }
                 document.getElementById("tableId").innerHTML = stringAux
             });
